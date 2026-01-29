@@ -1,0 +1,26 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/battleship.jpg) ;
+    background-repeat: none;
+    background-attachment:fixed;
+    
+    display: grid; 
+    place-items: center;
+}
+
+.titlescreen {
+    text-align: center;
+    transform: translateY(-20vh)
+}
+
+.titlescreen h1{
+    
+}
