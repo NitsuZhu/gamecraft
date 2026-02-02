@@ -1,3 +1,10 @@
+@font-face {
+    src: url(fonts/ProtestGuerrilla-Regular.ttf);
+    font-family: Protest;
+
+}
+
+
 * {
     text-decoration: none;
     margin: 0;
@@ -17,10 +24,58 @@ body{
 }
 
 .titlescreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    transform: translateY(-20vh)
+    height: 20vh;
+    transform: translateY(-10vh)
 }
 
 .titlescreen h1{
-    
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    background:  linear-gradient(135deg, #1b1515, #105396);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.titlescreen button{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.titlescreen button:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 250px;
+  min-height: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }

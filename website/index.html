@@ -8,7 +8,18 @@
 </head>
 <body>
     <div class="titlescreen">
-        <h1>battleship</h1>
+        <h1>BATTLESHIP</h1>
+        <button id="openPopup">START GAME</button>
+        <div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                <h2>Select an Option</h2>
+                <button onclick="openPage('singleplayer.html')">SINGLE PLAYER</button>
+                <button onclick="openPage('multiplayer.html')">MULTI PLAYER</button>
+                <button class="close" onclick="closePopup()">CLOSE</button>
+            </div>
+        </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>  
