@@ -12,3 +12,5 @@ function closePopup() {
 function openPage(url) {
   window.location.href = url;
 }
+
+
